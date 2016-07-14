@@ -1,0 +1,133 @@
+body{
+	background-image: url("images/image1.jpg");
+	background-repeat: repeat-x;
+	background-attachment:fixed;
+	overflow: scroll;
+}
+#page{
+	/*Ширина тексту*/
+	width: 700px;
+	/*відступ від країв*/
+	margin: 0 auto;
+}
+#index{
+	/*Висота площадки для (navigation)*/
+	height:70px;
+
+}
+#index ul li{
+	/*відобразити по горизонталі*/
+	float: left;
+	position:relative;
+	background-color: #20324A;
+	border: 1px solid #64AAC8;
+	display: block;
+
+}
+#index ul li a{
+	color:white;
+	padding: 0 75px;
+	
+	text-decoration: none;
+	line-height: 50px;
+	/* Відображення у вигляді бллока*/
+	display: block;
+	height: 55px;
+	background-color: #20324A;
+
+}
+#index ul li a:hover{
+	color: white;
+	background:rgba(084,084,131,0.5);
+	text-decoration: underline;
+	text-shadow:0 0 5px #00FFEF; 
+
+}
+.form-horizontal{
+	background-color: rgba(040,040,040,0.5);
+	border: 1px solid black;
+	padding: 150px;
+	width: 700px;
+	margin: 0 auto;
+	color: white;
+	margin-top: 190px;
+	height: 530px;
+
+}
+
+#column{
+	color: red;
+	text-shadow:0 0 5px black; 
+}
+.table{
+	width: 700px;
+	color: white;
+	margin-top: 190px;
+	background-color: rgba(040,040,040,0.6);
+	border: 1px solid black;
+}
+.container {
+	width: 700px; 
+	margin: 0 auto; 
+	overflow: hidden;
+}
+.clock {
+	width:700px; 
+	color:#fff; 
+}
+
+#Date { 
+	font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; 
+	font-size:36px; 
+	text-align:center; 
+	text-shadow:0 0 5px #00c6ff; 
+}
+
+.container ul { 
+	width:700px;
+	margin:0 auto; 
+	padding:0px; 
+	list-style:none;
+	 text-align:center; 
+}
+.container ul li { 
+	display:inline;
+ 	font-size:10em; 
+ 	text-align:center;
+  	font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; 
+  	text-shadow:0 0 5px #00c6ff; 
+}
+#point { 
+	position:relative; 
+	-moz-animation:mymove 1s ease infinite; 
+	-webkit-animation:mymove 1s ease infinite;
+	padding-left:10px; padding-right:10px; 
+}
+@-webkit-keyframes mymove {
+	0% {
+		opacity:1.0;
+		text-shadow:0 0 20px #00c6ff;
+	}
+	50% {
+		opacity:0; 
+		text-shadow:none; 
+	}
+	100% {
+		opacity:1.0; 
+		text-shadow:0 0 20px #00c6ff; 
+	}	
+}
+@-moz-keyframes mymove {
+	0% {
+		opacity:1.0; 
+		text-shadow:0 0 20px #00c6ff;
+	}
+	50% {
+		opacity:0; 
+		text-shadow:none; 
+	}
+	100% {
+		opacity:1.0; 
+		text-shadow:0 0 20px #00c6ff; 
+	}	
+}
