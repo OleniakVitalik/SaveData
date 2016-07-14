@@ -29,11 +29,13 @@ public class Creates extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		doGet(request, response);
+
 		String url = request.getParameter("url");
 		String password = request.getParameter("password");
 		String login = request.getParameter("login");
@@ -63,31 +65,4 @@ public class Creates extends HttpServlet {
 		prepSt.setString(4, used);
 		prepSt.execute();
 	}
-
-	// http://localhost:7186/SaveMyData/Create
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		doGet(request, response);
-
-		// String url = request.getParameter("url");
-		// String password = request.getParameter("password");
-		// String login = request.getParameter("login");
-		// String used = request.getParameter("used");
-		// Connection connection = ConnectionManagers.getConnection();
-		// try {
-		// if (url != null | password != null | login != null | used != null) {
-		// insertIntoDB(url, password, login, used, connection);
-		// }
-		// } catch (SQLException e) {
-		// System.out.println("No insert");
-		// e.printStackTrace();
-		// }
-		// request.getRequestDispatcher("/inputData.jsp").forward(request,
-		// response);
-	}
-
 }
